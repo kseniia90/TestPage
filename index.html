@@ -5,6 +5,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport">
+  
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- Initial CSS -->
@@ -19,7 +20,7 @@
       margin-right: auto;
       overflow-x: visible;
       position: relative;
-      width: 320px
+      width: 320px;
     }
 
     body.device-mobile-optimized:not(.responsive):not(.blockSiteScrolling) #SITE_CONTAINER {
@@ -1461,6 +1462,11 @@
         padding: 0;
         margin: 0 auto;
       }
+      body.device-mobile-optimized:not(.responsive) #SITE_CONTAINER {
+      margin: 0 auto;
+      padding: 0 10px;
+      width: 100%;
+    }
     }
 
     :host(:not(.device-mobile-optimized)) .V5AUxf>*,
@@ -18128,14 +18134,25 @@
   </div>
   <script>
     function showModal() {
-      console.log(window.innerWidth)
-      if (window.innerWidth > 900) {
+      console.log(window.outerWidth)
+      if (window.outerWidth > 900) {
         document.querySelector('[data-modal="#call-me"]').click();
       } else {
         document.querySelector('[href="#menu"]').click();
         document.querySelector('[data-menu="callback"]').click();
       }
     }
+    
+    window.addEventListener('resize', function() {
+      if (window.outerWidth < 640) {
+        document.body.classList.add('device-mobile-optimized');
+     } else {
+      document.body.classList.remove('device-mobile-optimized');
+     }
+    })
+    if (window.outerWidth < 640) {
+        document.body.classList.add('device-mobile-optimized');
+     }
     
   </script>
 </body>
