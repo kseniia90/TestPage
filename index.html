@@ -2068,6 +2068,14 @@
       transition: var(--trans2, color .4s ease 0s);
       white-space: nowrap
     }
+    .M3I7Z2.white-btn {
+      color: white; 
+      font: var(--fnt, var(--font_5));
+      margin: 0;
+      position: relative;
+      transition: var(--trans2, color .4s ease 0s);
+      white-space: nowrap;
+    }
 
     .R6ex7N[aria-disabled=false] .kuTaGy {
       background-color: var(--corvid-background-color, rgba(var(--bg, var(--color_17)), var(--alpha-bg, 1)));
@@ -2088,8 +2096,8 @@
 
     :host(:not(.device-mobile-optimized)) .R6ex7N[aria-disabled=false]:hover .kuTaGy,
     body:not(.device-mobile-optimized) .R6ex7N[aria-disabled=false]:hover .kuTaGy {
-      background-color: rgba(var(--bgh, var(--color_18)), var(--alpha-bgh, 1));
-      border-color: rgba(var(--brdh, var(--color_15)), var(--alpha-brdh, 1))
+      background-color: rgba(56, 105, 142, 1);
+      /* border-color: rgba(var(--brdh, var(--color_15)), var(--alpha-brdh, 1)) */
     }
 
     :host(:not(.device-mobile-optimized)) .R6ex7N[aria-disabled=false]:hover .M3I7Z2,
@@ -6265,7 +6273,7 @@
         --color_20: 71, 21, 0;
         --color_21: 254, 230, 176;
         --color_22: 252, 218, 137;
-        --color_23: 251, 182, 21;
+        --color_23: 34, 83, 120;
         --color_24: 167, 121, 14;
         --color_25: 84, 61, 7;
         --color_26: 176, 199, 254;
@@ -9392,8 +9400,8 @@
         --miniCart_dividersColor: 0, 0, 0;
         --miniCart_dividersColor-rgb: 0, 0, 0;
         --miniCart_dividersColor-opacity: 1;
-        --miniCart_headerBackground: 251, 182, 21;
-        --miniCart_headerBackground-rgb: 251, 182, 21;
+        --miniCart_headerBackground: 34, 83, 120;
+        --miniCart_headerBackground-rgb: 34, 83, 120;
         --miniCart_headerBackground-opacity: 1;
         --miniCart_headerTextColor: 0, 0, 0;
         --miniCart_headerTextColor-rgb: 0, 0, 0;
@@ -9401,11 +9409,11 @@
         --cartWidget_cartIconNumber: 0, 0, 0;
         --cartWidget_cartIconNumber-rgb: 0, 0, 0;
         --cartWidget_cartIconNumber-opacity: 1;
-        --cartWidgetButton_backgroundColor: 251, 182, 21;
-        --cartWidgetButton_backgroundColor-rgb: 251, 182, 21;
+        --cartWidgetButton_backgroundColor: 34, 83, 120;
+        --cartWidgetButton_backgroundColor-rgb: 34, 83, 120;
         --cartWidgetButton_backgroundColor-opacity: 1;
-        --cartWidget_cartIconBubble: 251, 182, 21;
-        --cartWidget_cartIconBubble-rgb: 251, 182, 21;
+        --cartWidget_cartIconBubble: 34, 83, 120;
+        --cartWidget_cartIconBubble-rgb: 34, 83, 120;
         --cartWidget_cartIconBubble-opacity: 1;
         --cartWidgetButton_textFont: normal normal normal 16px/1.4em oswald-medium, oswald, sans-serif;
         --cartWidgetButton_textFont-style: normal;
@@ -9443,7 +9451,7 @@
         --wix-color-10: 71, 21, 0;
         --wix-color-11: 254, 230, 176;
         --wix-color-12: 252, 218, 137;
-        --wix-color-13: 251, 182, 21;
+        --wix-color-13: 34, 83, 120;
         --wix-color-14: 167, 121, 14;
         --wix-color-15: 84, 61, 7;
         --wix-color-16: 176, 199, 254;
@@ -9736,7 +9744,7 @@
       }
 
       .comp-kok3oqdb .i1GPOs .l7HJaJ {
-        fill: rgb(251, 182, 21)
+        fill: rgb(34, 83, 120)
       }
 
       #comp-kpcirloy {
@@ -10241,9 +10249,13 @@
       }
 
       [data-mesh-id=comp-kp53t0hkinlineContent-gridContainer]>[id="comp-l7086vrn"] {
-        position: relative;
+        /* position: relative;
         margin: 14px 0px 19px calc((100% - 489px) * 0.5);
-        left: -66px;
+        left: -66px; */
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
         grid-area: 1 / 1 / 2 / 2;
         justify-self: start;
         align-self: start
@@ -10571,7 +10583,7 @@
         height: auto;
         width: 100%;
         min-height: 3287px;
-        grid-template-rows: repeat(11, min-content) 1fr;
+        grid-template-rows: repeat(12, min-content) 1fr;
         grid-template-columns: 100%;
         padding-bottom: 0px;
         box-sizing: border-box
@@ -10669,9 +10681,17 @@
 
       [data-mesh-id=Containerwi1pzinlineContent-gridContainer]>[id="comp-lci4po0k"] {
         position: relative;
-        margin: 0px 0px 0 calc((100% - 980px) * 0.5);
+        margin: 0px 0px 22px calc((100% - 980px) * 0.5);
         left: 0px;
         grid-area: 11 / 1 / 12 / 2;
+        justify-self: start;
+        align-self: start
+      }
+      [data-mesh-id=Containerwi1pzinlineContent-gridContainer]>[id="comp-lci4po0k2"] {
+        position: relative;
+        margin: 0px 0px 40px calc((100% - 980px) * 0.5);
+        left: 0px;
+        grid-area: 12 / 1 / 13 / 2;
         justify-self: start;
         align-self: start
       }
@@ -10680,9 +10700,65 @@
         position: relative;
         margin: 0px 0px 0 calc((100% - 980px) * 0.5);
         left: 0px;
-        grid-area: 12 / 1 / 13 / 2;
+        grid-area: 13 / 1 / 14 / 2;
         justify-self: start;
-        align-self: start
+        align-self: start;
+      }
+      .banner-support {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;  
+      }
+      .banner-support-img {
+        padding: 20px;
+      }
+      .banner-support-text {
+        max-width: 800px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; 
+        color: white;
+        font-size: 32px;     
+      }
+      .banner-support-btn {
+        padding: 20px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+      }
+      .banner-support-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px; 
+        color: white;
+        font-size: 22px; 
+        font-weight: 800;
+        background-color: #09f118;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      @media (max-width: 1460px) {
+        .banner-support {
+          gap: 25px;
+        }
+        .banner-support-button {
+          padding: 15px 10px; 
+          font-size: 20px; 
+        }
+      }
+      @media (max-width: 1425px) {
+        .banner-support {
+          gap: 20px;
+        }
+        .banner-support-button {
+          padding: 15px 10px; 
+          font-size: 18px; 
+        }
+      }
+      .banner-support-button:hover {
+        background-color: rgba(56, 105, 142, 1);
       }
 
       #comp-kp2jmx4f {
@@ -10963,16 +11039,23 @@
         width: calc(100% - 56px - 56px);
         min-width: 980px
       }
+      #comp-lci4po0k2 {
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(100% - 56px - 56px);
+        min-width: 980px
+      }
 
       #comp-lci4np4f {
-        left: 0;
-        margin-left: 0;
-        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(100% - 56px - 56px);
         min-width: 980px
       }
 
       #comp-kp2jmx44 {
-        width: 321px
+        width: 321px;
+        padding: 0 15px;
       }
 
       #comp-kp2jmx4u1 {
@@ -11096,8 +11179,7 @@
       }
 
       #comp-l7086vrn {
-        width: 623px;
-        height: 412px
+        width: 100%;
       }
 
       @font-face {
@@ -12000,6 +12082,14 @@
         min-width: 980px;
         --lastChildMarginBottom: undefined
       }
+      #comp-lci4po0k2 {
+        --bg-overlay-color: transparent;
+        --bg-gradient: none;
+        --padding: 0px;
+        --margin: 3px;
+        min-width: 980px;
+        --lastChildMarginBottom: undefined
+      }
 
       #comp-lci4np4f {
         --bg-overlay-color: transparent;
@@ -12331,7 +12421,7 @@
                                     <h1 class="font_0 wixui-rich-text__text"
                                       style="font-size:52px; line-height:1.1em; text-align:center;"><span
                                         style="letter-spacing:normal;" class="wixui-rich-text__text"><span
-                                          class="color_15 wixui-rich-text__text"><span style="font-size:52px;"
+                                          class="color_1 wixui-rich-text__text"><span style="font-size:52px;"
                                             class="wixui-rich-text__text"><span
                                               style="font-family:helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;"
                                               class="wixui-rich-text__text">МОНТАЖ<br class="wixui-rich-text__text">
@@ -12349,7 +12439,7 @@
                                     data-bg-effect-name="" data-has-ssr-src=""
                                     data-src="https://static.wixstatic.com/media/11062b_6c9591e9d9b348828e6d359c7434d6b6~mv2.jpg/v1/fill/w_1114,h_700,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_6c9591e9d9b348828e6d359c7434d6b6~mv2.jpg"><img
                                       src="./img/11062b_6c9591e9d9b348828e6d359c7434d6b6_mv2.jpg" alt=""
-                                      style="width: 891px; height: 560px; object-fit: cover; object-position: 50% 50%;"
+                                      style="width: 100%; height: 560px; object-fit: cover; object-position: 50% 50%;"
                                       fetchpriority="high"></wow-image></div>
                               </div>
                               <div data-mesh-id="comp-kp2jmx4u1inlineContent" data-testid="inline-content" class="">
@@ -12392,10 +12482,12 @@
                                       </li>
                                     </ul>
                                   </div>
-                                  <div class="comp-kp2jmx4p R6ex7N" id="comp-kp2jmx4p" aria-disabled="false"><a
-                                      data-testid="linkElement" data-popupid="ce0mk" target="_self" role="button"
-                                      class="kuTaGy wixui-button zKbzSQ" aria-disabled="false" tabindex="0"><span
-                                        class="M3I7Z2 wixui-button__label">ЗАМОВИТИ ПРОРАХУНОК</span></a></div>
+                                  <div class="comp-kp2jmx4p R6ex7N" id="comp-kp2jmx4p" aria-disabled="false">
+                                    <a data-testid="linkElement" data-popupid="ce0mk" target="_self" role="button"
+                                      class="kuTaGy wixui-button zKbzSQ" aria-disabled="false" tabindex="0" onclick="showModal();">
+                                      <span class="M3I7Z2 wixui-button__label">ЗАМОВИТИ ПРОРАХУНОК</span>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -12678,8 +12770,8 @@
                                   </div>
                                   <div class="comp-kp5469yf R6ex7N" id="comp-kp5469yf" aria-disabled="false"><a
                                       data-testid="linkElement" data-popupid="ce0mk" target="_self" role="button"
-                                      class="kuTaGy wixui-button zKbzSQ" aria-disabled="false" tabindex="0"><span
-                                        class="M3I7Z2 wixui-button__label">ЗАМОВИТИ ІНЖЕНЕРА</span></a></div>
+                                      class="kuTaGy wixui-button zKbzSQ" aria-disabled="false" tabindex="0" onclick="showModal();"><span
+                                        class="M3I7Z2 wixui-button__label white-btn" >ЗАМОВИТИ ІНЖЕНЕРА</span></a></div>
                                 </div>
                               </div>
                             </div>
@@ -12707,7 +12799,7 @@
                                           --wix-color-10: 71, 21, 0;
                                           --wix-color-11: 254, 230, 176;
                                           --wix-color-12: 252, 218, 137;
-                                          --wix-color-13: 251, 182, 21;
+                                          --wix-color-13: 34, 83, 120;
                                           --wix-color-14: 167, 121, 14;
                                           --wix-color-15: 84, 61, 7;
                                           --wix-color-16: 176, 199, 254;
@@ -16972,7 +17064,7 @@
                                                 style="height:412px;overflow-x:hidden">
                                                 <div id="pro-gallery-margin-container-comp-l7086vrn"
                                                   class="pro-gallery-margin-container"
-                                                  style="margin:0px;height:412px;width:623px;overflow:visible;position:relative">
+                                                  style="margin:5px auto;height:auto;width:623px;overflow:visible;position:relative">
                                                   <div data-id="e3986b61-8cfe-4ffa-a1eb-ecb8a0ad8a5b"
                                                     class="item-link-wrapper" data-idx="0" data-hook="item-link-wrapper"
                                                     tabindex="-1">
@@ -16993,7 +17085,13 @@
                                                             class="gallery-item-content item-content-regular image-item gallery-item-visible gallery-item gallery-item-preloaded  load-with-color image-loaded "
                                                             data-hook="image-item"
                                                             style="width:201px;height:201px;margin-top:0;margin-left:0">
-                                                            <picture>
+                                                            <img
+                                                                class="gallery-item-visible gallery-item gallery-item-preloaded"
+                                                                data-hook="gallery-item-image-img" data-idx="0"
+                                                                src="./img/0-02-05-7d6d5cb4034c3bb737df45462bdca80c242a747f783d9d987a4ba6acf37d7934_1c6db0fb35075b.jpg"
+                                                                alt="Дымоход_2.jpeg" loading="eager"
+                                                                style="width: 100%; height: 100%;">
+                                                            <!-- <picture>
                                                               <source
                                                                 srcset="https://static.wixstatic.com/media/38471c_856a915c25144e648cc649a1a7f8c6ad~mv2.jpeg/v1/fill/w_201,h_201,q_90/38471c_856a915c25144e648cc649a1a7f8c6ad~mv2.webp 1x, https://static.wixstatic.com/media/38471c_856a915c25144e648cc649a1a7f8c6ad~mv2.jpeg/v1/fill/w_402,h_402,q_90/38471c_856a915c25144e648cc649a1a7f8c6ad~mv2.webp 2x, https://static.wixstatic.com/media/38471c_856a915c25144e648cc649a1a7f8c6ad~mv2.jpeg/v1/fill/w_489,h_489,q_90/38471c_856a915c25144e648cc649a1a7f8c6ad~mv2.webp 3x, https://static.wixstatic.com/media/38471c_856a915c25144e648cc649a1a7f8c6ad~mv2.jpeg/v1/fill/w_489,h_489,q_90/38471c_856a915c25144e648cc649a1a7f8c6ad~mv2.webp 4x, https://static.wixstatic.com/media/38471c_856a915c25144e648cc649a1a7f8c6ad~mv2.jpeg/v1/fill/w_489,h_489,q_90/38471c_856a915c25144e648cc649a1a7f8c6ad~mv2.webp 5x"
                                                                 type="image/webp">
@@ -17002,10 +17100,10 @@
                                                                 type="image/jpeg"><img
                                                                 class="gallery-item-visible gallery-item gallery-item-preloaded"
                                                                 data-hook="gallery-item-image-img" data-idx="0"
-                                                                src="./img/38471c_856a915c25144e648cc649a1a7f8c6ad_mv2.jpeg"
+                                                                src="./img/0-02-05-7d6d5cb4034c3bb737df45462bdca80c242a747f783d9d987a4ba6acf37d7934_1c6db0fb35075b.jpg"
                                                                 alt="Дымоход_2.jpeg" loading="eager"
-                                                                style="width:201px;height:201px">
-                                                            </picture>
+                                                                style="width: 100%; height: 100%;">
+                                                            </picture> -->
                                                           </div>
                                                           <div class="item-hover-flex-container"
                                                             style="width: 201px; height: 201px; margin-top: 0px; margin-left: 0px; display: flex; position: absolute; top: 0px; left: 0px; align-items: flex-end;">
@@ -17061,7 +17159,13 @@
                                                             class="gallery-item-content item-content-regular image-item gallery-item-visible gallery-item gallery-item-preloaded  load-with-color image-loaded "
                                                             data-hook="image-item"
                                                             style="width:201px;height:201px;margin-top:0;margin-left:0">
-                                                            <picture>
+                                                            <img
+                                                                class="gallery-item-visible gallery-item gallery-item-preloaded"
+                                                                data-hook="gallery-item-image-img" data-idx="1"
+                                                                src="./img/IMAGE 2022-12-24 22:26:42.jpg"
+                                                                alt="Дымоход_7.jpeg" loading="eager"
+                                                                style="width: 100%; height: 100%;">
+                                                            <!-- <picture>
                                                               <source
                                                                 srcset="https://static.wixstatic.com/media/38471c_576954ddb69c4c39b64580b4ad0efa5e~mv2.jpeg/v1/fill/w_201,h_201,q_90/38471c_576954ddb69c4c39b64580b4ad0efa5e~mv2.webp 1x, https://static.wixstatic.com/media/38471c_576954ddb69c4c39b64580b4ad0efa5e~mv2.jpeg/v1/fill/w_402,h_402,q_90/38471c_576954ddb69c4c39b64580b4ad0efa5e~mv2.webp 2x, https://static.wixstatic.com/media/38471c_576954ddb69c4c39b64580b4ad0efa5e~mv2.jpeg/v1/fill/w_603,h_603,q_90/38471c_576954ddb69c4c39b64580b4ad0efa5e~mv2.webp 3x, https://static.wixstatic.com/media/38471c_576954ddb69c4c39b64580b4ad0efa5e~mv2.jpeg/v1/fill/w_804,h_804,q_90/38471c_576954ddb69c4c39b64580b4ad0efa5e~mv2.webp 4x, https://static.wixstatic.com/media/38471c_576954ddb69c4c39b64580b4ad0efa5e~mv2.jpeg/v1/fill/w_1005,h_1005,q_90/38471c_576954ddb69c4c39b64580b4ad0efa5e~mv2.webp 5x"
                                                                 type="image/webp">
@@ -17072,8 +17176,8 @@
                                                                 data-hook="gallery-item-image-img" data-idx="1"
                                                                 src="./img/38471c_576954ddb69c4c39b64580b4ad0efa5e_mv2.jpeg"
                                                                 alt="Дымоход_7.jpeg" loading="eager"
-                                                                style="width:201px;height:201px">
-                                                            </picture>
+                                                                style="width: 100%; height: 100%;">
+                                                            </picture> -->
                                                           </div>
                                                           <div class="item-hover-flex-container"
                                                             style="width: 201px; height: 201px; margin-top: 0px; margin-left: 0px; display: flex; position: absolute; top: 0px; left: 0px; align-items: flex-end;">
@@ -17129,7 +17233,13 @@
                                                             class="gallery-item-content item-content-regular image-item gallery-item-visible gallery-item gallery-item-preloaded  load-with-color image-loaded "
                                                             data-hook="image-item"
                                                             style="width: 201px; height: 201px; margin-top: 0px; margin-left: 0px;">
-                                                            <picture>
+                                                            <img
+                                                                class="gallery-item-visible gallery-item gallery-item-preloaded"
+                                                                data-hook="gallery-item-image-img" data-idx="2"
+                                                                src="./img/IMAGE 2023-02-07 12:22:30.jpg"
+                                                                alt="Дымоход_4.jpeg" loading="eager"
+                                                                style="width: 100%; height: 100%;">
+                                                            <!-- <picture>
                                                               <source
                                                                 srcset="https://static.wixstatic.com/media/38471c_cd5ce25c3b354431b12f161d185501e0~mv2.jpeg/v1/fill/w_201,h_201,q_90/38471c_cd5ce25c3b354431b12f161d185501e0~mv2.webp 1x, https://static.wixstatic.com/media/38471c_cd5ce25c3b354431b12f161d185501e0~mv2.jpeg/v1/fill/w_402,h_402,q_90/38471c_cd5ce25c3b354431b12f161d185501e0~mv2.webp 2x, https://static.wixstatic.com/media/38471c_cd5ce25c3b354431b12f161d185501e0~mv2.jpeg/v1/fill/w_594,h_594,q_90/38471c_cd5ce25c3b354431b12f161d185501e0~mv2.webp 3x, https://static.wixstatic.com/media/38471c_cd5ce25c3b354431b12f161d185501e0~mv2.jpeg/v1/fill/w_594,h_594,q_90/38471c_cd5ce25c3b354431b12f161d185501e0~mv2.webp 4x, https://static.wixstatic.com/media/38471c_cd5ce25c3b354431b12f161d185501e0~mv2.jpeg/v1/fill/w_594,h_594,q_90/38471c_cd5ce25c3b354431b12f161d185501e0~mv2.webp 5x"
                                                                 type="image/webp">
@@ -17140,8 +17250,8 @@
                                                                 data-hook="gallery-item-image-img" data-idx="2"
                                                                 src="./img/38471c_cd5ce25c3b354431b12f161d185501e0_mv2.jpeg"
                                                                 alt="Дымоход_4.jpeg" loading="eager"
-                                                                style="width: 201px; height: 201px;">
-                                                            </picture>
+                                                                style="width: 100%; height: 100%;">
+                                                            </picture> -->
                                                           </div>
                                                           <div class="item-hover-flex-container"
                                                             style="width: 201px; height: 201px; margin-top: 0px; margin-left: 0px; display: flex; position: absolute; top: 0px; left: 0px; align-items: flex-end;">
@@ -17197,7 +17307,13 @@
                                                             class="gallery-item-content item-content-regular image-item gallery-item-visible gallery-item gallery-item-preloaded  load-with-color image-loaded "
                                                             data-hook="image-item"
                                                             style="width: 201px; height: 201px; margin-top: 0px; margin-left: 0px;">
-                                                            <picture>
+                                                            <img
+                                                                class="gallery-item-visible gallery-item gallery-item-preloaded"
+                                                                data-hook="gallery-item-image-img" data-idx="3"
+                                                                src="./img/IMG_286.jpg"
+                                                                alt="Дымоход_1.jpeg" loading="eager"
+                                                                style="width: 100%; height: 100%;">
+                                                            <!-- <picture>
                                                               <source
                                                                 srcset="https://static.wixstatic.com/media/38471c_08129b1a0fe145ac93e90d3bba7ba4ab~mv2.jpeg/v1/fill/w_201,h_201,q_90/38471c_08129b1a0fe145ac93e90d3bba7ba4ab~mv2.webp 1x, https://static.wixstatic.com/media/38471c_08129b1a0fe145ac93e90d3bba7ba4ab~mv2.jpeg/v1/fill/w_402,h_402,q_90/38471c_08129b1a0fe145ac93e90d3bba7ba4ab~mv2.webp 2x, https://static.wixstatic.com/media/38471c_08129b1a0fe145ac93e90d3bba7ba4ab~mv2.jpeg/v1/fill/w_603,h_603,q_90/38471c_08129b1a0fe145ac93e90d3bba7ba4ab~mv2.webp 3x, https://static.wixstatic.com/media/38471c_08129b1a0fe145ac93e90d3bba7ba4ab~mv2.jpeg/v1/fill/w_692,h_692,q_90/38471c_08129b1a0fe145ac93e90d3bba7ba4ab~mv2.webp 4x, https://static.wixstatic.com/media/38471c_08129b1a0fe145ac93e90d3bba7ba4ab~mv2.jpeg/v1/fill/w_692,h_692,q_90/38471c_08129b1a0fe145ac93e90d3bba7ba4ab~mv2.webp 5x"
                                                                 type="image/webp">
@@ -17208,8 +17324,8 @@
                                                                 data-hook="gallery-item-image-img" data-idx="3"
                                                                 src="./img/38471c_08129b1a0fe145ac93e90d3bba7ba4ab_mv2.jpeg"
                                                                 alt="Дымоход_1.jpeg" loading="eager"
-                                                                style="width: 201px; height: 201px;">
-                                                            </picture>
+                                                                style="width: 100%; height: 100%;">
+                                                            </picture> -->
                                                           </div>
                                                           <div class="item-hover-flex-container"
                                                             style="width: 201px; height: 201px; margin-top: 0px; margin-left: 0px; display: flex; position: absolute; top: 0px; left: 0px; align-items: flex-end;">
@@ -17265,7 +17381,13 @@
                                                             class="gallery-item-content item-content-regular image-item gallery-item-visible gallery-item gallery-item-preloaded   "
                                                             data-hook="image-item"
                                                             style="width: 201px; height: 201px; margin-top: 0px; margin-left: 0px;">
-                                                            <picture>
+                                                            <img
+                                                                class="gallery-item-visible gallery-item gallery-item-preloaded"
+                                                                data-hook="gallery-item-image-img" data-idx="4"
+                                                                src="./img/IMG_0452.jpg"
+                                                                alt="IMG_0452.HEIC" loading="eager"
+                                                                style="width: 100%; height: 100%;">
+                                                            <!-- <picture>
                                                               <source
                                                                 srcset="https://static.wixstatic.com/media/38471c_80c9b8d99db54c2cb5201d50fa7ee40a~mv2.png/v1/fill/w_201,h_201,q_90/38471c_80c9b8d99db54c2cb5201d50fa7ee40a~mv2.webp 1x, https://static.wixstatic.com/media/38471c_80c9b8d99db54c2cb5201d50fa7ee40a~mv2.png/v1/fill/w_402,h_402,q_90/38471c_80c9b8d99db54c2cb5201d50fa7ee40a~mv2.webp 2x, https://static.wixstatic.com/media/38471c_80c9b8d99db54c2cb5201d50fa7ee40a~mv2.png/v1/fill/w_603,h_603,q_90/38471c_80c9b8d99db54c2cb5201d50fa7ee40a~mv2.webp 3x, https://static.wixstatic.com/media/38471c_80c9b8d99db54c2cb5201d50fa7ee40a~mv2.png/v1/fill/w_804,h_804,q_90/38471c_80c9b8d99db54c2cb5201d50fa7ee40a~mv2.webp 4x, https://static.wixstatic.com/media/38471c_80c9b8d99db54c2cb5201d50fa7ee40a~mv2.png/v1/fill/w_1005,h_1005,q_90/38471c_80c9b8d99db54c2cb5201d50fa7ee40a~mv2.webp 5x"
                                                                 type="image/webp">
@@ -17276,8 +17398,8 @@
                                                                 data-hook="gallery-item-image-img" data-idx="4"
                                                                 src="./img/38471c_80c9b8d99db54c2cb5201d50fa7ee40a_mv2.png"
                                                                 alt="IMG_0452.HEIC" loading="eager"
-                                                                style="width: 201px; height: 201px;">
-                                                            </picture>
+                                                                style="width: 100%; height: 100%;">
+                                                            </picture> -->
                                                           </div>
                                                           <div class="item-hover-flex-container"
                                                             style="width: 201px; height: 201px; margin-top: 0px; margin-left: 0px; display: flex; position: absolute; top: 0px; left: 0px; align-items: flex-end;">
@@ -17333,7 +17455,13 @@
                                                             class="gallery-item-content item-content-regular image-item gallery-item-visible gallery-item gallery-item-preloaded  load-with-color image-loaded "
                                                             data-hook="image-item"
                                                             style="width: 201px; height: 201px; margin-top: 0px; margin-left: 0px;">
-                                                            <picture>
+                                                            <img
+                                                                class="gallery-item-visible gallery-item gallery-item-preloaded"
+                                                                data-hook="gallery-item-image-img" data-idx="5"
+                                                                src="./img/IMG_1699.jpg"
+                                                                alt="Дымоход_6.jpeg" loading="eager"
+                                                                style="width: 100%; height: 100%;">
+                                                            <!-- <picture>
                                                               <source
                                                                 srcset="https://static.wixstatic.com/media/38471c_19160550f5954dec80e4bd20bccd670e~mv2.jpeg/v1/fill/w_201,h_201,q_90/38471c_19160550f5954dec80e4bd20bccd670e~mv2.webp 1x, https://static.wixstatic.com/media/38471c_19160550f5954dec80e4bd20bccd670e~mv2.jpeg/v1/fill/w_402,h_402,q_90/38471c_19160550f5954dec80e4bd20bccd670e~mv2.webp 2x, https://static.wixstatic.com/media/38471c_19160550f5954dec80e4bd20bccd670e~mv2.jpeg/v1/fill/w_514,h_514,q_90/38471c_19160550f5954dec80e4bd20bccd670e~mv2.webp 3x, https://static.wixstatic.com/media/38471c_19160550f5954dec80e4bd20bccd670e~mv2.jpeg/v1/fill/w_514,h_514,q_90/38471c_19160550f5954dec80e4bd20bccd670e~mv2.webp 4x, https://static.wixstatic.com/media/38471c_19160550f5954dec80e4bd20bccd670e~mv2.jpeg/v1/fill/w_514,h_514,q_90/38471c_19160550f5954dec80e4bd20bccd670e~mv2.webp 5x"
                                                                 type="image/webp">
@@ -17344,8 +17472,8 @@
                                                                 data-hook="gallery-item-image-img" data-idx="5"
                                                                 src="./img/38471c_19160550f5954dec80e4bd20bccd670e_mv2.jpeg"
                                                                 alt="Дымоход_6.jpeg" loading="eager"
-                                                                style="width: 201px; height: 201px;">
-                                                            </picture>
+                                                                style="width: 100%; height: 100%;">
+                                                            </picture> -->
                                                           </div>
                                                           <div class="item-hover-flex-container"
                                                             style="width: 201px; height: 201px; margin-top: 0px; margin-left: 0px; display: flex; position: absolute; top: 0px; left: 0px; align-items: flex-end;">
@@ -17437,7 +17565,7 @@
                                     data-bg-effect-name="" data-has-ssr-src=""
                                     data-src="https://static.wixstatic.com/media/38471c_2a201a61a25347818dcd7257a4555d6d~mv2.jpg/v1/fill/w_424,h_609,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/38471c_2a201a61a25347818dcd7257a4555d6d~mv2.jpg"><img
                                       src="./img/38471c_1ccf751e79374a0280a4837c0a64c830_mv2.png"
-                                      style="width: 339px; height: 487px; object-fit: cover; object-position: 50% 50%;"
+                                      style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;"
                                       fetchpriority="high"></wow-image></div>
                               </div>
                               <div data-mesh-id="comp-l9d3xatjinlineContent" data-testid="inline-content" class="">
@@ -17459,24 +17587,24 @@
                                       style="font-size:20px; line-height:0.9em; text-align:center;"><span
                                         style="font-size:20px;" class="wixui-rich-text__text"><span
                                           style="letter-spacing:normal;" class="wixui-rich-text__text"><span
-                                            style="color:#00305B;" class="wixui-rich-text__text"><span
+                                            style="color:#FFFFFF;" class="wixui-rich-text__text"><span
                                               style="font-family:raleway,sans-serif;"
                                               class="wixui-rich-text__text"><span style="font-weight:bold;"
                                                 class="wixui-rich-text__text">Євгенія</span></span></span></span></span>
                                     </h2>
                                   </div>
                                   <div data-mesh-id="comp-l9d3xau8-rotated-wrapper">
-                                    <div id="comp-l9d3xau8" class="comp-l9d3xau8 aVng1S wixui-horizontal-line"></div>
+                                    <div id="comp-l9d3xau8" class="comp-l9d3xau8 wixui-horizontal-line" style="background-color:#FFFFFF; height: 2px;"></div>
                                   </div>
                                   <div id="comp-l9d3xau5" class="KcpHeO tz5f0K comp-l9d3xau5 wixui-rich-text"
                                     data-testid="richTextElement">
                                     <p class="font_8 wixui-rich-text__text"
                                       style="font-size:15px; line-height:1.6em; text-align:center;"><span
-                                        style="color:#00305B;" class="wixui-rich-text__text"><span
+                                        style="color:#FFFFFF;" class="wixui-rich-text__text"><span
                                           style="font-size:15px;" class="wixui-rich-text__text"><span
                                             style="font-family:avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;"
                                             class="wixui-rich-text__text"><span style="letter-spacing:-0.02em;"
-                                              class="wixui-rich-text__text">Дякуємо компанії ГРУБА за роботу. Все
+                                              class="wixui-rich-text__text">Дякуємо компанії РАВІТ за роботу. Все
                                               встановили, перевірили, хлопці молодці, дуже старанні, все зроблено з
                                               душею як для себе) Дуже дякуємо! Будемо
                                               рекомендувати!</span></span></span></span></p>
@@ -17494,7 +17622,7 @@
                                     data-src="https://static.wixstatic.com/media/38471c_1aaa33c6229d419c82620cf9617772e7~mv2.jpg/v1/fill/w_419,h_609,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/38471c_1aaa33c6229d419c82620cf9617772e7~mv2.jpg"><img
                                       src="./img/38471c_1aaa33c6229d419c82620cf9617772e7_mv2.jpg"
                                       alt="IMAGE 2022-10-17 21_33_26.jpg"
-                                      style="width: 335px; height: 487px; object-fit: cover; object-position: 50% 50%;"
+                                      style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;"
                                       fetchpriority="high"></wow-image></div>
                               </div>
                               <div data-mesh-id="comp-l9d3xauminlineContent" data-testid="inline-content" class="">
@@ -17512,7 +17640,7 @@
                                     data-src="https://static.wixstatic.com/media/38471c_8257af5f1b934f5aa8b5903ec269cefe~mv2.jpg/v1/fill/w_419,h_609,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/38471c_8257af5f1b934f5aa8b5903ec269cefe~mv2.jpg"><img
                                       src="./img/38471c_8257af5f1b934f5aa8b5903ec269cefe_mv2.jpg"
                                       alt="IMAGE 2022-10-17 21_35_48.jpg"
-                                      style="width: 335px; height: 487px; object-fit: cover; object-position: 50% 50%;"
+                                      style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;"
                                       fetchpriority="high"></wow-image></div>
                               </div>
                               <div data-mesh-id="comp-l9d3xauqinlineContent" data-testid="inline-content" class="">
@@ -17538,7 +17666,7 @@
                                     data-src="https://static.wixstatic.com/media/38471c_338316a33e0348469bfbb9e4c2496d6d~mv2.jpg/v1/fill/w_424,h_609,al_l,q_80,usm_0.66_1.00_0.01,enc_auto/38471c_338316a33e0348469bfbb9e4c2496d6d~mv2.jpg"><img
                                       src="./img/38471c_338316a33e0348469bfbb9e4c2496d6d_mv2.jpg"
                                       alt="IMAGE 2022-10-17 21_48_49.jpg"
-                                      style="width: 339px; height: 487px; object-fit: cover; object-position: 0% 50%;"
+                                      style="width: 100%; height: 100%; object-fit: cover; object-position: 0% 50%;"
                                       fetchpriority="high"></wow-image></div>
                               </div>
                               <div data-mesh-id="comp-l9d4ps5tinlineContent" data-testid="inline-content" class="">
@@ -17560,25 +17688,25 @@
                                       style="font-size:20px; line-height:0.9em; text-align:center;"><span
                                         style="font-size:20px;" class="wixui-rich-text__text"><span
                                           style="letter-spacing:normal;" class="wixui-rich-text__text"><span
-                                            style="color:#00305B;" class="wixui-rich-text__text"><span
+                                            style="color:#FFFFFF;" class="wixui-rich-text__text"><span
                                               style="font-family:raleway,sans-serif;"
                                               class="wixui-rich-text__text"><span style="font-weight:bold;"
                                                 class="wixui-rich-text__text">Валерій</span></span></span></span></span>
                                     </h2>
                                   </div>
                                   <div data-mesh-id="comp-l9d4ps6r-rotated-wrapper">
-                                    <div id="comp-l9d4ps6r" class="comp-l9d4ps6r aVng1S wixui-horizontal-line"></div>
+                                    <div id="comp-l9d4ps6r" class="comp-l9d3xau8 wixui-horizontal-line" style="background-color:#FFFFFF; height: 2px;"></div>
                                   </div>
                                   <div id="comp-l9d4ps79" class="KcpHeO tz5f0K comp-l9d4ps79 wixui-rich-text"
                                     data-testid="richTextElement">
                                     <p class="font_8 wixui-rich-text__text"
                                       style="line-height:1.6em; text-align:center; font-size:15px;"><span
-                                        style="color:rgb(0, 48, 91); font-family:avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif; letter-spacing:-0.02em;"
+                                        style="color:#FFFFFF; font-family:avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif; letter-spacing:-0.02em;"
                                         class="wixui-rich-text__text">Благодарю ребят за проделанную работу. Доставили
                                         булерьян и трубы,&nbsp;</span><span
-                                        style="color:rgb(0, 48, 91); font-family:avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif; letter-spacing:-0.020000000794728596em;"
+                                        style="color:#FFFFFF; font-family:avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif; letter-spacing:-0.020000000794728596em;"
                                         class="wixui-rich-text__text">выполнили вовремя монтаж.</span><span
-                                        style="color:rgb(0, 48, 91); font-family:avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif; letter-spacing:-0.02em;"
+                                        style="color:#FFFFFF; font-family:avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif; letter-spacing:-0.02em;"
                                         class="wixui-rich-text__text">&nbsp;Все сделано качественно и профессионально.
                                         Огромное спасибо!!!</span></p>
                                   </div>
@@ -17601,7 +17729,7 @@
                                       data-src="https://static.wixstatic.com/media/38471c_8c4a7908af974d158c8a7c7ed5473a1df000.jpg/v1/fill/w_335,h_487,al_c,lg_1,q_80,usm_0.33_1.00_0.00,enc_auto/38471c_8c4a7908af974d158c8a7c7ed5473a1df000.jpg"
                                       style="opacity: 0;"><img
                                         src="./img/38471c_8c4a7908af974d158c8a7c7ed5473a1df000.jpg" alt=""
-                                        style="width: 335px; height: 487px; object-fit: cover; object-position: 50% 50%;"
+                                        style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;"
                                         fetchpriority="high"></wow-image></wix-video></div>
                               </div>
                               <div data-mesh-id="comp-l9d4ps7iinlineContent" data-testid="inline-content" class="">
@@ -17619,7 +17747,7 @@
                                     data-src="https://static.wixstatic.com/media/38471c_2bc44127a5af4f3cbc16602f5ecda350~mv2.jpg/v1/fill/w_419,h_609,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/38471c_2bc44127a5af4f3cbc16602f5ecda350~mv2.jpg"><img
                                       src="./img/38471c_2bc44127a5af4f3cbc16602f5ecda350_mv2.jpg"
                                       alt="IMAGE 2022-10-17 21_48_54.jpg"
-                                      style="width: 335px; height: 487px; object-fit: cover; object-position: 50% 50%;"
+                                      style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;"
                                       fetchpriority="high"></wow-image></div>
                               </div>
                               <div data-mesh-id="comp-l9d4ps7dinlineContent" data-testid="inline-content" class="">
@@ -17651,7 +17779,7 @@
                                       data-src="https://static.wixstatic.com/media/38471c_9aca6ce673c94ca4b8365bcd3871316ff000.jpg/v1/fill/w_339,h_487,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/38471c_9aca6ce673c94ca4b8365bcd3871316ff000.jpg"
                                       style="opacity: 0;"><img
                                         src="./img/38471c_9aca6ce673c94ca4b8365bcd3871316ff000.jpg" alt=""
-                                        style="width: 339px; height: 487px; object-fit: cover; object-position: 50% 50%;"
+                                        style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;"
                                         fetchpriority="high"></wow-image></wix-video></div>
                               </div>
                               <div data-mesh-id="comp-lb18s2u7inlineContent" data-testid="inline-content" class="">
@@ -17673,21 +17801,21 @@
                                       style="font-size:20px; line-height:0.9em; text-align:center;"><span
                                         style="font-size:20px;" class="wixui-rich-text__text"><span
                                           style="letter-spacing:normal;" class="wixui-rich-text__text"><span
-                                            style="color:#00305B;" class="wixui-rich-text__text"><span
+                                            style="color:#FFFFFF;" class="wixui-rich-text__text"><span
                                               style="font-family:raleway,sans-serif;"
                                               class="wixui-rich-text__text"><span style="font-weight:bold;"
                                                 class="wixui-rich-text__text">Андрій</span></span></span></span></span>
                                     </h2>
                                   </div>
                                   <div data-mesh-id="comp-lb18s2xn-rotated-wrapper">
-                                    <div id="comp-lb18s2xn" class="comp-lb18s2xn aVng1S wixui-horizontal-line"></div>
+                                    <div id="comp-lb18s2xn" class="comp-l9d3xau8 wixui-horizontal-line" style="background-color:#FFFFFF; height: 2px;"></div>
                                   </div>
                                   <div id="comp-lb18s2yi" class="KcpHeO tz5f0K comp-lb18s2yi wixui-rich-text"
                                     data-testid="richTextElement">
                                     <p class="font_8 wixui-rich-text__text"
                                       style="line-height:1.6em; text-align:center; font-size:15px;"><span
-                                        style="color:rgb(0, 48, 91); font-family:avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif; letter-spacing:-0.02em;"
-                                        class="wixui-rich-text__text">Хочу висловити вдячність компанії Груба за хороший
+                                        style="color:#FFFFFF; font-family:avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif; letter-spacing:-0.02em;"
+                                        class="wixui-rich-text__text">Хочу висловити вдячність компанії Равіт за хороший
                                         сервіс, за швидкий виїзд та прорахунок, а також за те що відключення світла не
                                         стали проблемою для монтажу. Все працює чудово. Велике дякую керівнику відділу
                                         монтажу Сергію за професіоналізм.</span></p>
@@ -17711,7 +17839,7 @@
                                       data-src="https://static.wixstatic.com/media/38471c_8a550ad76014498194a384fcde977887f000.jpg/v1/fill/w_335,h_487,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/38471c_8a550ad76014498194a384fcde977887f000.jpg"
                                       style="opacity: 0;"><img
                                         src="./img/38471c_8a550ad76014498194a384fcde977887f000.jpg" alt=""
-                                        style="width: 335px; height: 487px; object-fit: cover; object-position: 50% 50%;"
+                                        style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;"
                                         fetchpriority="high"></wow-image></wix-video></div>
                               </div>
                               <div data-mesh-id="comp-lb18s2yminlineContent" data-testid="inline-content" class="">
@@ -17729,7 +17857,7 @@
                                     data-src="https://static.wixstatic.com/media/38471c_4cf14066376244df87f076bdb21e8603~mv2.jpg/v1/fill/w_419,h_609,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/38471c_4cf14066376244df87f076bdb21e8603~mv2.jpg"><img
                                       src="./img/38471c_4cf14066376244df87f076bdb21e8603_mv2.jpg"
                                       alt="IMAGE 2022-11-28 22_29_56.jpg"
-                                      style="width: 335px; height: 487px; object-fit: cover; object-position: 50% 50%;"
+                                      style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;"
                                       fetchpriority="high"></wow-image></div>
                               </div>
                               <div data-mesh-id="comp-lb18s2zlinlineContent" data-testid="inline-content" class="">
@@ -17761,7 +17889,7 @@
                                       data-src="https://static.wixstatic.com/media/38471c_c5c5e1c32bc9413fa75c182f6978e0bbf000.jpg/v1/fill/w_339,h_487,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/38471c_c5c5e1c32bc9413fa75c182f6978e0bbf000.jpg"
                                       style="opacity: 0;"><img
                                         src="./img/38471c_c5c5e1c32bc9413fa75c182f6978e0bbf000.jpg" alt=""
-                                        style="width: 339px; height: 487px; object-fit: cover; object-position: 50% 50%;"
+                                        style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;"
                                         fetchpriority="high"></wow-image></wix-video></div>
                               </div>
                               <div data-mesh-id="comp-lci4po3qinlineContent" data-testid="inline-content" class="">
@@ -17783,23 +17911,23 @@
                                       style="font-size:20px; line-height:0.9em; text-align:center;"><span
                                         style="font-size:20px;" class="wixui-rich-text__text"><span
                                           style="letter-spacing:normal;" class="wixui-rich-text__text"><span
-                                            style="color:#00305B;" class="wixui-rich-text__text"><span
+                                            style="color:#FFFFFF;" class="wixui-rich-text__text"><span
                                               style="font-family:raleway,sans-serif;"
                                               class="wixui-rich-text__text"><span style="font-weight:bold;"
                                                 class="wixui-rich-text__text">Олександр</span></span></span></span></span>
                                     </h2>
                                   </div>
                                   <div data-mesh-id="comp-lci4po6a-rotated-wrapper">
-                                    <div id="comp-lci4po6a" class="comp-lci4po6a aVng1S wixui-horizontal-line"></div>
+                                    <div id="comp-lci4po6a" class="comp-l9d3xau8 wixui-horizontal-line" style="background-color:#FFFFFF; height: 2px;"></div>
                                   </div>
                                   <div id="comp-lci4po70" class="KcpHeO tz5f0K comp-lci4po70 wixui-rich-text"
                                     data-testid="richTextElement">
                                     <p class="font_8 wixui-rich-text__text"
                                       style="line-height:1.6em; text-align:center; font-size:15px;"><span
-                                        style="color:rgb(0, 48, 91); font-family:avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif; letter-spacing:-0.02em;"
-                                        class="wixui-rich-text__text">Огромная благодарность компании за ГРУБА за
+                                        style="color:#FFFFFF; font-family:avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif; letter-spacing:-0.02em;"
+                                        class="wixui-rich-text__text">Огромная благодарность компании за РАВІТ за
                                         качественных дымоход и&nbsp;</span><span
-                                        style="color:rgb(0, 48, 91); font-family:avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif; letter-spacing:-0.020000000794728596em;"
+                                        style="color:#FFFFFF; font-family:avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif; letter-spacing:-0.020000000794728596em;"
                                         class="wixui-rich-text__text">выполненный монтаж. Очень доволен.
                                         Благодарю!</span></p>
                                   </div>
@@ -17815,7 +17943,7 @@
                                     data-bg-effect-name="" data-has-ssr-src=""
                                     data-src="https://static.wixstatic.com/media/38471c_d10b121f75134393add6fd9b0e7b931e~mv2.png/v1/fill/w_419,h_609,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/38471c_d10b121f75134393add6fd9b0e7b931e~mv2.png"><img
                                       src="./img/38471c_d10b121f75134393add6fd9b0e7b931e_mv2.png" alt="IMG_0452.HEIC"
-                                      style="width: 335px; height: 487px; object-fit: cover; object-position: 50% 50%;"
+                                      style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;"
                                       fetchpriority="high"></wow-image></div>
                               </div>
                               <div data-mesh-id="comp-lci4po7dinlineContent" data-testid="inline-content" class="">
@@ -17832,7 +17960,7 @@
                                     data-bg-effect-name="" data-has-ssr-src=""
                                     data-src="https://static.wixstatic.com/media/38471c_1ccf751e79374a0280a4837c0a64c830~mv2.png/v1/fill/w_419,h_609,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/38471c_1ccf751e79374a0280a4837c0a64c830~mv2.png"><img
                                       src="./img/38471c_1ccf751e79374a0280a4837c0a64c830_mv2.png" alt="IMG_0459.HEIC"
-                                      style="width: 335px; height: 487px; object-fit: cover; object-position: 50% 50%;"
+                                      style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;"
                                       fetchpriority="high"></wow-image></div>
                               </div>
                               <div data-mesh-id="comp-lci4po7oinlineContent" data-testid="inline-content" class="">
@@ -17842,22 +17970,113 @@
                             </div>
                           </div>
                         </section>
-                        <section id="comp-lci4np4f" class="comp-lci4np4f CohWsy wixui-column-strip">
-                          <div id="bgLayers_comp-lci4np4f" data-hook="bgLayers" class="if7Vw2">
+                        <section id="comp-lci4po0k2" class="comp-lci4po0k2 CohWsy wixui-column-strip">
+                          <div id="bgLayers_comp-lci4po0k2" data-hook="bgLayers" class="if7Vw2">
                             <div data-testid="colorUnderlay" class="tcElKx i1tH8h"></div>
-                            <div id="bgMedia_comp-lci4np4f" class="wG8dni"></div>
+                            <div id="bgMedia_comp-lci4po0k2" class="wG8dni"></div>
                           </div>
                           <div data-testid="columns" class="V5AUxf">
-                            <div id="comp-lci4np78" class="comp-lci4np78 YzqVVZ wixui-column-strip__column">
-                              <div id="bgLayers_comp-lci4np78" data-hook="bgLayers" class="MW5IWV">
+                            <div id="comp-l9d3xatj" class="comp-l9d3xatj YzqVVZ wixui-column-strip__column">
+                              <div id="bgLayers_comp-l9d3xatj" data-hook="bgLayers" class="MW5IWV">
                                 <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
-                                <div id="bgMedia_comp-lci4np78" class="VgO9Yg"></div>
+                                <div id="bgMedia_comp-l9d3xatj" class="VgO9Yg"><wow-image id="img_comp-l9d3xatj"
+                                    class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-l9d3xatj&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:245,&quot;targetHeight&quot;:487,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:957,&quot;height&quot;:1280,&quot;uri&quot;:&quot;38471c_2a201a61a25347818dcd7257a4555d6d~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
+                                    data-bg-effect-name="" data-has-ssr-src=""
+                                    data-src="https://static.wixstatic.com/media/38471c_2a201a61a25347818dcd7257a4555d6d~mv2.jpg/v1/fill/w_424,h_609,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/38471c_2a201a61a25347818dcd7257a4555d6d~mv2.jpg"><img
+                                      src="./img/IMAGE 2023-02-07 12:22:30.jpg"
+                                      style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;"
+                                      fetchpriority="high"></wow-image></div>
                               </div>
-                              <div data-mesh-id="comp-lci4np78inlineContent" data-testid="inline-content" class="">
-                                <div data-mesh-id="comp-lci4np78inlineContent-gridContainer"
+                              <div data-mesh-id="comp-l9d3xatjinlineContent" data-testid="inline-content" class="">
+                                <div data-mesh-id="comp-l9d3xatjinlineContent-gridContainer"
                                   data-testid="mesh-container-content"></div>
                               </div>
                             </div>
+                            <div id="comp-l9d3xats" class="comp-l9d3xats YzqVVZ wixui-column-strip__column">
+                              <div id="bgLayers_comp-l9d3xats" data-hook="bgLayers" class="MW5IWV">
+                                <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+                                <div id="bgMedia_comp-l9d3xats" class="VgO9Yg"></div>
+                              </div>
+                              <div data-mesh-id="comp-l9d3xatsinlineContent" data-testid="inline-content" class="">
+                                <div data-mesh-id="comp-l9d3xatsinlineContent-gridContainer"
+                                  data-testid="mesh-container-content">
+                                  <div id="comp-l9d3xatx" class="KcpHeO tz5f0K comp-l9d3xatx wixui-rich-text"
+                                    data-testid="richTextElement">
+                                    <h2 class="font_2 wixui-rich-text__text"
+                                      style="font-size:20px; line-height:0.9em; text-align:center;"><span
+                                        style="font-size:20px;" class="wixui-rich-text__text"><span
+                                          style="letter-spacing:normal;" class="wixui-rich-text__text"><span
+                                            style="color:#FFFFFF;" class="wixui-rich-text__text"><span
+                                              style="font-family:raleway,sans-serif;"
+                                              class="wixui-rich-text__text"><span style="font-weight:bold;"
+                                                class="wixui-rich-text__text">Олег</span></span></span></span></span>
+                                    </h2>
+                                  </div>
+                                  <div data-mesh-id="comp-l9d3xau8-rotated-wrapper">
+                                    <div id="comp-l9d3xau8" class="comp-l9d3xau8 wixui-horizontal-line" style="background-color:#FFFFFF; height: 2px;"></div>
+                                  </div>
+                                  <div id="comp-l9d3xau5" class="KcpHeO tz5f0K comp-l9d3xau5 wixui-rich-text"
+                                    data-testid="richTextElement">
+                                    <p class="font_8 wixui-rich-text__text"
+                                      style="font-size:15px; line-height:1.6em; text-align:center;"><span
+                                        style="color:#FFFFFF;" class="wixui-rich-text__text"><span
+                                          style="font-size:15px;" class="wixui-rich-text__text"><span
+                                            style="font-family:avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;"
+                                            class="wixui-rich-text__text"><span style="letter-spacing:-0.02em;"
+                                              class="wixui-rich-text__text">Дуже дякую компанію RAVIT за круту роботу. Все виконано якісно. Майстри своєї справи)) Гарних Вам клієнтів)</span></span></span></span></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="comp-l9d3xaum" class="comp-l9d3xaum YzqVVZ wixui-column-strip__column">
+                              <div id="bgLayers_comp-l9d3xaum" data-hook="bgLayers" class="MW5IWV">
+                                <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+                                <div id="bgMedia_comp-l9d3xaum" class="VgO9Yg"><wow-image id="img_comp-l9d3xaum"
+                                    class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-l9d3xaum&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:242,&quot;targetHeight&quot;:487,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:957,&quot;height&quot;:1280,&quot;uri&quot;:&quot;38471c_1aaa33c6229d419c82620cf9617772e7~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
+                                    data-bg-effect-name="" data-has-ssr-src=""
+                                    data-src="https://static.wixstatic.com/media/38471c_1aaa33c6229d419c82620cf9617772e7~mv2.jpg/v1/fill/w_419,h_609,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/38471c_1aaa33c6229d419c82620cf9617772e7~mv2.jpg"><img
+                                      src="./img/IMAGE 2022-12-24 22:26:42.jpg"
+                                      alt="IMAGE 2022-10-17 21_33_26.jpg"
+                                      style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;"
+                                      fetchpriority="high"></wow-image></div>
+                              </div>
+                              <div data-mesh-id="comp-l9d3xauminlineContent" data-testid="inline-content" class="">
+                                <div data-mesh-id="comp-l9d3xauminlineContent-gridContainer"
+                                  data-testid="mesh-container-content"></div>
+                              </div>
+                            </div>
+                            <div id="comp-l9d3xauq" class="comp-l9d3xauq YzqVVZ wixui-column-strip__column">
+                              <div id="bgLayers_comp-l9d3xauq" data-hook="bgLayers" class="MW5IWV">
+                                <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+                                <div id="bgMedia_comp-l9d3xauq" class="VgO9Yg"><wow-image id="img_comp-l9d3xauq"
+                                    class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-l9d3xauq&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:242,&quot;targetHeight&quot;:487,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:960,&quot;height&quot;:1280,&quot;uri&quot;:&quot;38471c_8257af5f1b934f5aa8b5903ec269cefe~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
+                                    data-bg-effect-name="" data-has-ssr-src=""
+                                    data-src="https://static.wixstatic.com/media/38471c_8257af5f1b934f5aa8b5903ec269cefe~mv2.jpg/v1/fill/w_419,h_609,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/38471c_8257af5f1b934f5aa8b5903ec269cefe~mv2.jpg"><img
+                                      src="./img/IMG_1699.jpg"
+                                      alt="IMAGE 2022-10-17 21_35_48.jpg"
+                                      style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;"
+                                      fetchpriority="high"></wow-image></div>
+                              </div>
+                              <div data-mesh-id="comp-l9d3xauqinlineContent" data-testid="inline-content" class="">
+                                <div data-mesh-id="comp-l9d3xauqinlineContent-gridContainer"
+                                  data-testid="mesh-container-content"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>                                         
+                        <section id="comp-lci4np4f" class="comp-lci4np4f">
+                          <div class="banner-support" style="background-color: #225378;">
+                            <div class="banner-support-img">
+                              <img src="./img/support.svg" alt="" style="width: 100px;">
+                            </div>
+                            <div class="banner-support-text" style="background-color: #225378;">
+                              <p >Виникли запитання? Зверніться за консультацією до наших спеціалістів.</p>
+                            </div>
+                            <div class="banner-support-btn">
+                              <button class="banner-support-button" onclick="showModal();">Замовити консультацію</button>
                           </div>
                         </section>
                       </div>
@@ -17899,6 +18118,18 @@
   <div style="display: none; visibility: hidden;">
     <meta name="google-site-verification" content="W6z3aEe54tE0q0SF_WcoCNfFHgBpOuMi-SYiazBWQg4">
   </div>
+  <script>
+    function showModal() {
+      console.log(window.innerWidth)
+      if (window.innerWidth > 900) {
+        document.querySelector('[data-modal="#call-me"]').click();
+      } else {
+        document.querySelector('[href="#menu"]').click();
+        document.querySelector('[data-menu="callback"]').click();
+      }
+    }
+    
+  </script>
 </body>
 
 </html>
